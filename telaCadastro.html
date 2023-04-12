@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="telaCadastro.css">
+    <title>HopTech Cadastro</title>
+</head>
+<body>
+    <main class='corpoCadastro'>
+        <img id="nextpoint" src="nextpoint.png" alt="">
+        <div class="credentials">
+            <div class="titulo">
+                <h1>Cadastro</h1>
+                <h3>Cadastro da empresa no Sistema HopTech</h3>
+            </div>
+            <div class="inputBox">
+                <form action="/" method="post">
+                    <div class="inputs"> <!-- NOME EMPRESA-->
+                        <label for="ipt_nomeEmpresa">Nome da Empresa*</label>
+                        <input id="ipt_nomeEmpresa" type="text" class="iptLogin">
+                    </div>
+                    <div class="inputs_juntas"> <!-- TEL & CNPJ-->
+                        <div class="inputs">
+                            <label for="ipt_telefone">Telefone Fixo*</label>
+                            <input maxlength="13" id="ipt_telefone" type="tel" class="iptLogin" placeholder="(11)1111-1111">
+                        </div>
+                        <div class="inputs">
+                            <label for="ipt_cnpj">CNPJ*</label>
+                            <input id="ipt_cnpj" maxlength="18" type="text" class="iptLogin">
+                        </div>
+                    </div>
+                    <div class="inputs"> <!-- EMAIL-->
+                        <label for="ipt_email">Email*</label>
+                        <input id="ipt_email" type="text" class="iptLogin">
+                    </div>
+                    <div class="inputs"> <!-- CONFIRMAÇÃO DO EMAIL -->
+                        <label for="ipt_confEmail">Confirmar Email*</label>
+                        <input id="ipt_confEmail" type="text" class="iptLogin">
+                    </div>
+                    <div class="inputs_juntas"> <!--CEP & ESTADO-->
+                        <div class="inputs">
+                            <label for="ipt_cep">CEP*</label>
+                            <input id="ipt_cep" maxlength="9" type="text" class="iptLogin">
+                        </div>
+                        <div class="inputs">
+                            <label for="ipt_estados">Estado*</label>
+                            <select id="ipt_estados" name="Selecione um Estado" class="iptLogin">
+                                <option>Exemplo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="inputs_juntas"> <!--CIDADE & BAIRRO-->
+                        <div class="inputs">
+                            <label for="ipt_cidade">Cidade*</label>
+                            <input id="ipt_cidade" type="text" class="iptLogin">
+                        </div>
+                        <div class="inputs">
+                            <label for="ipt_bairro">Bairro*</label>
+                            <input id="ipt_bairro" type="text" class="iptLogin">
+                        </div>
+                    </div>
+                    <div class="inputs_juntas"> <!-- RUA & COMPLEMENTO-->
+                        <div class="inputs">
+                            <label for="ipt_rua">Rua*</label>
+                            <input id="ipt_rua" type="text" class="iptLogin">
+                        </div>
+                        <div class="inputs">
+                            <label for="ipt_complemento">Complemento</label>
+                            <input id="ipt_complemento" type="text" class="iptLogin">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="buttonBox">
+                <button onclick="finalizarCadastro()">Finalizar Cadastro</button>
+            </div>
+            <ul id="listaDeErros"></ul>
+        </div>
+        <div class="logoBox">
+            <img src="hopTech.png" alt="Logo HopTech">
+        </div>
+    </main>
+</body>
+
+</html>
+<script src="credentials.js"></script>
+<script src="formatacao.js"></script>

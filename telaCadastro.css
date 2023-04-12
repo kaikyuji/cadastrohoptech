@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+:root{
+    --color1: #9DC08B;
+    --color2: #40513B;
+}
+
+body{
+    background-color: var(--color1);
+    min-height: 100vh;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corpoCadastro {
+    position: relative;
+    border-radius: 5px;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.credentials{
+    background-color: red;
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#nextpoint{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20%;
+}
+
+.titulo h3{
+    color: #FFFFFF;
+}
+
+.titulo h1{
+    color: var(--color2);
+}
+
+.logoBox{
+    padding: 2em;
+    display: flex;
+    align-items: center;
+}
+.logoBox img{
+    width: 100%;
+}
+
+.inputs_juntas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputs{
+    position: relative;
+    right: .5em;
+    padding: 0 .5em ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+input{
+    border-radius: 500px;
+    border: none;
+    outline: none;
+    padding: .5em;
+}
+
+select{
+    padding: .5em;
+    border-radius: 500px;
+    border: none;
+    outline: none;
+}
+
+.buttonBox button{
+    border: none;
+    border-radius: 500px;
+    padding: .5em 1em;
+    background-color: var(--color2);
+    cursor: pointer;
+    color: #fff;    
+}
+
